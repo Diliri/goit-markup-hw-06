@@ -367,7 +367,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/background-image-mob.jpg);
+    url(../images/people-office-mob.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -412,7 +412,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/background-image-tab.jpg);
+      url(../images/people-office-mob.png); /* ../images/people-office-tab.png */
   }
 
   .hero-title {
@@ -432,7 +432,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/background-image.jpg);
+      url(../images/people-office-mob.png); /* people-office.png */
     max-width: 1440px;
     margin: 0 auto;
   }
@@ -459,7 +459,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/background-image@2x.jpg);
+      url(../images/people-office-mob@2x.png); /* people-office@2x.png */
   }
 }
 
