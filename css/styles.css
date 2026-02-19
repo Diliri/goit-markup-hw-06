@@ -916,6 +916,10 @@ button {
     flex-direction: row;
     gap: 24px;
   }
+  
+  .footer-subscribe-input {
+    width: 264px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -944,6 +948,8 @@ button {
     width: 264px;
     opacity: 1;
   }
+
+  
 
   .footer .socials-list-link:hover,
   .footer .socials-list-link:focus,
