@@ -50,7 +50,7 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="burger-btn">
+        <button type="button" class="burger-btn" data-menu-open>
           <svg class="burger-btn-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
@@ -61,10 +61,12 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-order-btn" type="button">Order Service</button>
+          <button class="hero-order-btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
-      <section class="features section">
+      <section class="features section" id="studio">
         <div class="container">
           <h2 class="features-title visually-hidden">Features</h2>
           <ul class="features-list">
@@ -308,7 +310,7 @@
           </ul>
         </div>
       </section>
-      <section class="product-section section">
+      <section class="product-section section" id="portfolio">
         <div class="container">
           <h2 class="product-title">Our Portfolio</h2>
           <ul class="product-list">
@@ -454,7 +456,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="container">
         <div class="footer-text-wrap">
           <a class="logo-link" href="./index.html"
@@ -521,9 +523,11 @@
       </div>
     </footer>
 
-    <div class="mob-menu">
+    <!--MOBILE MENU-->
+
+    <div class="mob-menu" data-menu>
       <div class="mob-menu-wrap container">
-        <button type="button" class="close-btn mobile">
+        <button type="button" class="close-btn mobile" data-menu-close>
           <svg class="close-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-cross"></use>
           </svg>
@@ -531,13 +535,13 @@
         <nav class="mob-nav-menu">
           <ul class="mob-nav-list">
             <li class="mob-nav-item">
-              <a href="#" class="mob-nav-link current">Studio</a>
+              <a href="#studio" class="mob-nav-link current">Studio</a>
             </li>
             <li class="mob-nav-item">
-              <a href="#" class="mob-nav-link">Portfolio</a>
+              <a href="#portfolio" class="mob-nav-link">Portfolio</a>
             </li>
             <li class="mob-nav-item">
-              <a href="#" class="mob-nav-link">Contacts</a>
+              <a href="#contacts" class="mob-nav-link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -588,9 +592,11 @@
       </div>
     </div>
 
-    <div class="backdrop">
+    <!--MODAL WINDOW-->
+
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button class="close-btn" type="button">
+        <button class="close-btn" type="button" data-modal-close>
           <svg class="close-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-cross"></use>
           </svg>
@@ -661,5 +667,8 @@
         </form>
       </div>
     </div>
+    <!-- endregion popup -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
